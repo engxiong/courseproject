@@ -20,7 +20,7 @@ Levels: - WALKING
 	- LAYING
 	
 #### measured variables:  
-updated from original - gsub "Acc" to Acceleration
+label names updated from original: gsub "Acc" to "Acceleration"
 
 Class:numeric
 - values of variables with mean() denotes the average of the recordings for each subject_id and each activity
