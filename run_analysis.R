@@ -52,7 +52,7 @@ names(mergeDataset)<-gsub("Acc","Acceleration",names(mergeDataset))
 #### Group mergeDataset by subject_id and activity 
 #### and average the values for each variables 
 #### with melt and dcast function
-
+library(reshape2)
 meltdata<-melt(mergeDataset,id=1:2,measured=3:68)
 
 dcastdata<-dcast(meltdata,...~variable,mean)
