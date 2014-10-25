@@ -1,24 +1,28 @@
-#CodeBook for the Tidy Dataset created, modified and updated from the original codebook found below
-
+###CodeBook for the Tidy Dataset created, modified and updated from the original codebook found below
 66 variables selected from the 561 features based on the mean() and std() measurements.
+
 2 id variables subject_id and activity merged with features/measured variables.
+
 Tidy Dataset comprises 180 observations and 68 variables.
 
-##id variables:
+####id variables:
 
 subject_id
+
 Class:Integer, 1:30
 
 activity
-Class:Factor
-Levels: WALKING
-	WALKING_UPSTAIRS
-	WALKING_DOWNSTAIRS
-	SITTING
-	STANDING
-	LAYING
 
-## measured variables:
+Class:Factor
+
+Levels: - WALKING
+	- WALKING_UPSTAIRS
+	- WALKING_DOWNSTAIRS
+	- SITTING
+	- STANDING
+	- LAYING
+	
+#### measured variables:
 updated from original - gsub "Acc" to Acceleration
 
 Class:numeric
@@ -26,59 +30,75 @@ Class:numeric
 - values of variables with std() denotes the standard deviation of the recordings for each subject_id and each activity
 
 tBodyAcceleration-mean()-XYZ
+
 tBodyAcceleration-std()-XYZ
 
 tGravityAcceleration-mean()-XYZ
+
 tGravityAcceleration-std()-XYZ
 
 tBodyAccelerationJerk-mean()-XYZ
+
 tBodyAccelerationJerk-std()-XYZ
 
 tBodyGyro-mean()-XYZ
+
 tBodyGyro-std()-XYZ
 
 tBodyGyroJerk-mean()-XYZ
+
 tBodyGyroJerk-std()-XYZ
 
 tBodyAcceleration-Mag-mean()
+
 tBodyAcceleration-Mag-std()
 
 tGravityAccelerationMag-mean()
+
 tGravityAccelerationMag-std()
 
 tBodyAccelerationJerkMag-mean()
+
 tBodyAccelerationJerkMag-std()
 
 tBodyGyroMag-mean()
+
 tBodyGyroMag-std()
 
 tBodyGyroJerkMag-mean()
+
 tBodyGyroJerkMag-std()
 
 fBodyAcceleration-mean()-XYZ
+
 fBodyAcceleration-std()-XYZ
 
 fBodyAccelerationJerk-mean()-XYZ
+
 fBodyAccelerationJerk-std()-XYZ
 
 fBodyGyro-mean()-XYZ
+
 fBodyGyro-std()-XYZ
 
 fBodyAccelerationMag-mean()
+
 fBodyAccelerationMag-std()
 
 fBodyAccelerationJerkMag-mean()
+
 fBodyAccelerationJerkMag-std()
 
 fBodyGyroMag-mean()
+
 fBodyGyroMag-std()
 
 fBodyGyroJerkMag-mean()
+
 fBodyGyroJerkMag-std()
 
-#Original CodeBook on the features of the database collected from Samsung smartphone accelerometers
-Feature Selection 
-=================
+###Original CodeBook on the features of the database collected from Samsung smartphone accelerometers
+####Feature Selection 
 
 The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
 
