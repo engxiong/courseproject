@@ -19,7 +19,7 @@ Levels: - WALKING
 	- STANDING
 	- LAYING
 	
-#### measured variables:
+#### measured variables:  
 updated from original - gsub "Acc" to Acceleration
 
 Class:numeric
