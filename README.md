@@ -10,9 +10,8 @@ Step 2: Unzip the file and set the file path ./UCI HAR Dataset as the working di
 
 Step 3:Run the run_analysis.R script in the set working diretory to achieve the output result of tidydata.txt
 
-====================================================
 What the run_analysis.R does in sequence:
-
+==
 1.Merges the training and the test sets to create one data set.
 
 2.Reads in the activity and features names
