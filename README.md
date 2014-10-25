@@ -8,7 +8,9 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 
 Step 2: Unzip the file and set the file path ./UCI HAR Dataset as the working directory in R
 
-Step 3:Run the run_analysis.R script in the set working diretory to achieve the output result of tidydata.txt
+Step 3: Make sure you have installed reshape2 package
+
+Step 4:Run the run_analysis.R script in the set working diretory to achieve the output result of tidydata.txt
 
 ##What the run_analysis.R does in sequence:
 1.Merges the training and the test sets to create one data set.
