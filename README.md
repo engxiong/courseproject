@@ -1,4 +1,4 @@
-Cleaning and Getting Data Course Project
+#Cleaning and Getting Data Course Project
 =============
 Objective: Run an analysis on the Human Activity Recognition from Smartphone Dataset to create a tidy data set
 
@@ -10,7 +10,7 @@ Step 2: Unzip the file and set the file path ./UCI HAR Dataset as the working di
 
 Step 3:Run the run_analysis.R script in the set working diretory to achieve the output result of tidydata.txt
 
-What the run_analysis.R does in sequence:
+##What the run_analysis.R does in sequence:
 ==
 1.Merges the training and the test sets to create one data set.
 
@@ -24,9 +24,8 @@ What the run_analysis.R does in sequence:
 
 6.From the merged data set in step 5, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
+##Files that will be read in R:
 ====================================================
-Files that will be read in R:
-
 - 'features.txt': List of all features.
 
 - 'activity_labels.txt': Links the class labels with their activity name.
