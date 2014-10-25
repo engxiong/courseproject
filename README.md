@@ -19,7 +19,6 @@ Step 3:Run the run_analysis.R script in the set working diretory to achieve the 
 
 - rbind merged train and test data to form one large dataset
 
-
 2.Reads in the activity and features names
 
 3.Rename the column names of the merged data set with descriptive feature/variable names
@@ -28,7 +27,7 @@ Step 3:Run the run_analysis.R script in the set working diretory to achieve the 
 
 4.Uses descriptive activity names to name the activities in the merged data set.
 
-- convert activty column into factor and renaming the levels
+- convert activity column into factor and renaming the levels
 
 5.Extracts only the measurements on the mean and standard deviation for each measurement. 
 
