@@ -7,14 +7,11 @@ Tidy Dataset comprises 180 observations and 68 variables.
 
 ####id variables:
 
-subject_id
-
+subject_id  
 Class:Integer, 1:30
 
-activity
-
-Class:Factor
-
+activity  
+Class:Factor  
 Levels: - WALKING
 	- WALKING_UPSTAIRS
 	- WALKING_DOWNSTAIRS
@@ -29,72 +26,55 @@ Class:numeric
 - values of variables with mean() denotes the average of the recordings for each subject_id and each activity
 - values of variables with std() denotes the standard deviation of the recordings for each subject_id and each activity
 
-tBodyAcceleration-mean()-XYZ
-
+tBodyAcceleration-mean()-XYZ  
 tBodyAcceleration-std()-XYZ
 
-tGravityAcceleration-mean()-XYZ
-
+tGravityAcceleration-mean()-XYZ  
 tGravityAcceleration-std()-XYZ
 
-tBodyAccelerationJerk-mean()-XYZ
-
+tBodyAccelerationJerk-mean()-XYZ  
 tBodyAccelerationJerk-std()-XYZ
 
-tBodyGyro-mean()-XYZ
-
+tBodyGyro-mean()-XYZ  
 tBodyGyro-std()-XYZ
 
-tBodyGyroJerk-mean()-XYZ
-
+tBodyGyroJerk-mean()-XYZ  
 tBodyGyroJerk-std()-XYZ
 
-tBodyAcceleration-Mag-mean()
-
+tBodyAcceleration-Mag-mean()  
 tBodyAcceleration-Mag-std()
 
-tGravityAccelerationMag-mean()
-
+tGravityAccelerationMag-mean()  
 tGravityAccelerationMag-std()
 
-tBodyAccelerationJerkMag-mean()
-
+tBodyAccelerationJerkMag-mean()  
 tBodyAccelerationJerkMag-std()
 
-tBodyGyroMag-mean()
-
+tBodyGyroMag-mean()  
 tBodyGyroMag-std()
 
-tBodyGyroJerkMag-mean()
-
+tBodyGyroJerkMag-mean()  
 tBodyGyroJerkMag-std()
 
-fBodyAcceleration-mean()-XYZ
-
+fBodyAcceleration-mean()-XYZ  
 fBodyAcceleration-std()-XYZ
 
-fBodyAccelerationJerk-mean()-XYZ
-
+fBodyAccelerationJerk-mean()-XYZ  
 fBodyAccelerationJerk-std()-XYZ
 
-fBodyGyro-mean()-XYZ
-
+fBodyGyro-mean()-XYZ  
 fBodyGyro-std()-XYZ
 
-fBodyAccelerationMag-mean()
-
+fBodyAccelerationMag-mean()  
 fBodyAccelerationMag-std()
 
-fBodyAccelerationJerkMag-mean()
-
+fBodyAccelerationJerkMag-mean() 
 fBodyAccelerationJerkMag-std()
 
-fBodyGyroMag-mean()
-
+fBodyGyroMag-mean()  
 fBodyGyroMag-std()
 
-fBodyGyroJerkMag-mean()
-
+fBodyGyroJerkMag-mean()  
 fBodyGyroJerkMag-std()
 
 ###Original CodeBook on the features of the database collected from Samsung smartphone accelerometers
