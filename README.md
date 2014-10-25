@@ -35,6 +35,9 @@ Step 3:Run the run_analysis.R script in the set working diretory to achieve the 
 
 6.From the merged data set in step 5, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
+- use melt function to create id variables: subject_id and activity and others to be measured variables
+- use dcast function to find the average of each variabls for each activity and each subject 
+
 ##Files that will be read in R:
 - 'features.txt': List of all features.
 
