@@ -12,7 +12,7 @@ Class:Integer, 1:30
 
 activity  
 Class:Factor  
-Levels: - WALKING
+6 Levels: - WALKING
 	- WALKING_UPSTAIRS
 	- WALKING_DOWNSTAIRS
 	- SITTING
