@@ -1,16 +1,16 @@
 ###CodeBook for the Tidy Dataset created, modified and updated from the original codebook found below
 66 variables selected from the 561 features based on the mean() and std() measurements.
 
-2 id variables subject_id and activity merged with features/measured variables.
+2 id variables subjectid and activity merged with features/measured variables.
 
 Tidy Dataset comprises 180 observations and 68 variables.
 
 ####id variables:
 
-subject_id  
+[1] subjectid  
 Class:Integer, 1:30
 
-activity  
+[2] activity    
 Class:Factor  
 6 Levels: - WALKING
 	- WALKING_UPSTAIRS
@@ -20,62 +20,88 @@ Class:Factor
 	- LAYING
 	
 #### measured variables:  
-variable names updated from original: gsub "Acc" to "Acceleration"
+variable names updated from original: 
+- use tolower to make all characters of the variable names to lower cases
+- remove all spaces and punctuation
+- use gsub to substitute string containing freq to frequency 
+- use gsub to substitute string beginning with t to time
+- use gsub to substitute string beginning with f to frequency
+- use gsub to substitute string containing acc to acceleration
+- use gsub to substitute string containing gyro to gyroscope
+- use gsub to substitute string containing mag to magnitute
+- use gsub to substitute string containing std to standarddeviation
 
 Class:numeric
-- values of variables with mean() denotes the average of the recordings for each subject_id and each activity
-- values of variables with std() denotes the standard deviation of the recordings for each subject_id and each activity
+- values of variables containing mean denotes the average of the recordings for each subjectid and each activity
+- values of variables containing standarddeviation denotes the standard deviation of the recordings for each subjectid and each activity
+- [number] denotes the nth column in the tidy dataset
 
-tBodyAcceleration-mean()-XYZ  
-tBodyAcceleration-std()-XYZ
-
-tGravityAcceleration-mean()-XYZ  
-tGravityAcceleration-std()-XYZ
-
-tBodyAccelerationJerk-mean()-XYZ  
-tBodyAccelerationJerk-std()-XYZ
-
-tBodyGyro-mean()-XYZ  
-tBodyGyro-std()-XYZ
-
-tBodyGyroJerk-mean()-XYZ  
-tBodyGyroJerk-std()-XYZ
-
-tBodyAcceleration-Mag-mean()  
-tBodyAcceleration-Mag-std()
-
-tGravityAccelerationMag-mean()  
-tGravityAccelerationMag-std()
-
-tBodyAccelerationJerkMag-mean()  
-tBodyAccelerationJerkMag-std()
-
-tBodyGyroMag-mean()  
-tBodyGyroMag-std()
-
-tBodyGyroJerkMag-mean()  
-tBodyGyroJerkMag-std()
-
-fBodyAcceleration-mean()-XYZ  
-fBodyAcceleration-std()-XYZ
-
-fBodyAccelerationJerk-mean()-XYZ  
-fBodyAccelerationJerk-std()-XYZ
-
-fBodyGyro-mean()-XYZ  
-fBodyGyro-std()-XYZ
-
-fBodyAccelerationMag-mean()  
-fBodyAccelerationMag-std()
-
-fBodyAccelerationJerkMag-mean()  
-fBodyAccelerationJerkMag-std()
-
-fBodyGyroMag-mean()  
-fBodyGyroMag-std()
-
-fBodyGyroJerkMag-mean()  
-fBodyGyroJerkMag-std()
+[3] timebodyaccelerationmeanx  
+[4] timebodyaccelerationmeany  
+[5] timebodyaccelerationmeanz  
+[6] timebodyaccelerationstandarddeviationx  
+[7] timebodyaccelerationstandarddeviationy  
+[8] timebodyaccelerationstandarddeviationz  
+[9] timegravityaccelerationmeanx  
+[10] timegravityaccelerationmeany  
+[11] timegravityaccelerationmeanz  
+[12] timegravityaccelerationstandarddeviationx  
+[13] timegravityaccelerationstandarddeviationy  
+[14] timegravityaccelerationstandarddeviationz  
+[15] timebodyaccelerationjerkmeanx  
+[16] timebodyaccelerationjerkmeany  
+[17] timebodyaccelerationjerkmeanz  
+[18] timebodyaccelerationjerkstandarddeviationx  
+[19] timebodyaccelerationjerkstandarddeviationy  
+[20] timebodyaccelerationjerkstandarddeviationz  
+[21] timebodygyroscopemeanx  
+[22] timebodygyroscopemeany  
+[23] timebodygyroscopemeanz  
+[24] timebodygyroscopestandarddeviationx  
+[25] timebodygyroscopestandarddeviationy  
+[26] timebodygyroscopestandarddeviationz  
+[27] timebodygyroscopejerkmeanx  
+[28] timebodygyroscopejerkmeany  
+[29] timebodygyroscopejerkmeanz  
+[30] timebodygyroscopejerkstandarddeviationx  
+[31] timebodygyroscopejerkstandarddeviationy  
+[32] timebodygyroscopejerkstandarddeviationz  
+[33] timebodyaccelerationmagnitudemean  
+[34] timebodyaccelerationmagnitudestandarddeviation  
+[35] timegravityaccelerationmagnitudemean  
+[36] timegravityaccelerationmagnitudestandarddeviation  
+[37] timebodyaccelerationjerkmagnitudemean  
+[38] timebodyaccelerationjerkmagnitudestandarddeviation  
+[39] timebodygyroscopemagnitudemean  
+[40] timebodygyroscopemagnitudestandarddeviation  
+[41] timebodygyroscopejerkmagnitudemean  
+[42] timebodygyroscopejerkmagnitudestandarddeviation  
+[43] frequencybodyaccelerationmeanx  
+[44] frequencybodyaccelerationmeany  
+[45] frequencybodyaccelerationmeanz  
+[46] frequencybodyaccelerationstandarddeviationx  
+[47] frequencybodyaccelerationstandarddeviationy  
+[48] frequencybodyaccelerationstandarddeviationz  
+[49] frequencybodyaccelerationjerkmeanx  
+[50] frequencybodyaccelerationjerkmeany  
+[51] frequencybodyaccelerationjerkmeanz  
+[52] frequencybodyaccelerationjerkstandarddeviationx  
+[53] frequencybodyaccelerationjerkstandarddeviationy  
+[54] frequencybodyaccelerationjerkstandarddeviationz  
+[55] frequencybodygyroscopemeanx  
+[56] frequencybodygyroscopemeany  
+[57] frequencybodygyroscopemeanz  
+[58] frequencybodygyroscopestandarddeviationx  
+[59] frequencybodygyroscopestandarddeviationy  
+[60] frequencybodygyroscopestandarddeviationz  
+[61] frequencybodyaccelerationmagnitudemean  
+[62] frequencybodyaccelerationmagnitudestandarddeviation  
+[63] frequencybodyaccelerationjerkmagnitudemean  
+[64] frequencybodyaccelerationjerkmagnitudestandarddeviation  
+[65] frequencybodygyroscopemagnitudemean  
+[66] frequencybodygyroscopemagnitudestandarddeviation  
+[67] frequencybodygyroscopejerkmagnitudemean  
+[68] frequencybodygyroscopejerkmagnitudestandarddeviation  
 
 ###Original CodeBook on the features of the database collected from Samsung smartphone accelerometers
 ####Feature Selection 
