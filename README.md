@@ -35,11 +35,11 @@ Step 4:Run the run_analysis.R script in the set working diretory to achieve the 
 - convert activity column into factor and renaming the levels
 
 5.Extracts only the measurements on the mean and standard deviation for each measurement. 
-- use grep1 and regular expression to extract the column names with mean() and std() and subject and activity
+- use grep1 and regular expression to extract the column names with mean() and std() and subjectid and activity
 
-6.From the merged data set in step 5, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
-- use melt function to create id variables: subject_id and activity and others to be measured variables
-- use dcast function to find the average of each variabls for each activity and each subject 
+6.From the merged data set in step 5, creates a second, independent tidy data set with the average of each variable for each activity and each subjectid.
+- use melt function to create id variables: subjectid and activity and others to be measured variables
+- use dcast function to find the average of each variabls for each activity and each subjectid 
 
 ##Files that will be read in R:
 - 'features.txt': List of all features.
