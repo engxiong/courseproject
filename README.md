@@ -1,4 +1,4 @@
-#Cleaning and Getting Data Course Project
+#Getting and Cleaning Data Course Project
 
 Objective: Run an analysis on the Human Activity Recognition from Smartphone Dataset to create a tidy data set
 
