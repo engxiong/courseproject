@@ -32,7 +32,7 @@ activitynames<-read.table("./activity_labels.txt")
 vactivitynames<-as.vector(activitynames[,2])
 
 ### Changing the column names for the subject and activity column 1&2
-names(mergeData)[c(1:2)]<-c("subject_id","activity")
+names(mergeData)[c(1:2)]<-c("subjectid","activity")
 names(mergeData)[c(3:563)]<-Vfeaturenames
 
 ### Use descriptive names to name activity names in the mergeData set by
@@ -47,7 +47,17 @@ mergeDataset<-mergeData[,grepl("activity|subject|[Mm]ean\\(\\)|[Ss]td\\(\\)",nam
 
 ###Labeling the variables names in the mergeDataset with descriptive names
 
-names(mergeDataset)<-gsub("Acc","Acceleration",names(mergeDataset))
+Columnnames<-colnames(mergeDataset)
+Columnnames<-tolower(Columnnames)
+Columnnames<-gsub("[[:space:]|[:punct:]]","",Columnnames)
+Columnnames<-gsub("freq","frequency",Columnnames)
+Columnnames<-gsub("^t","time",Columnnames)
+Columnnames<-gsub("^f","frequency",Columnnames)
+Columnnames<-gsub("acc","acceleration",Columnnames)
+Columnnames<-gsub("gyro","gyroscope",Columnnames)
+Columnnames<-gsub("mag","magnitude",Columnnames)
+Columnnames<-gsub("std","standarddeviation",Columnnames)
+colnames(mergeDataset)<-Columnnames
 
 #### Group mergeDataset by subject_id and activity 
 #### and average the values for each variables 
@@ -59,3 +69,7 @@ dcastdata<-dcast(meltdata,...~variable,mean)
 
 #### Independent tidy data set created
 Tidydata<- write.table(dcastdata,"./tidydata.txt",row.name=FALSE)
+
+### to see the final tidy dataset: tidydataset<-read.table("./tidydata.txt",header=TRUE)
+
+###### END ######
