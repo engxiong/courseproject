@@ -21,13 +21,21 @@ Step 4:Run the run_analysis.R script in the set working diretory to achieve the 
 2.Reads in the activity and features names
 
 3.Rename the column names of the merged data set with descriptive feature/variable names
-- use gsub to substitute string containing Acc to Acceleration to better describe the feautres
+- use tolower to make all characters of the variable names to lower cases
+- remove all spaces and punctuation
+- use gsub to substitute string containing freq to frequency 
+- use gsub to substitute string beginning with t to time
+- use gsub to substitute string beginning with f to frequency
+- use gsub to substitute string containing acc to acceleration
+- use gsub to substitute string containing gyro to gyroscope
+- use gsub to substitute string containing mag to magnitute
+- use gsub to substitute string containing std to standarddeviation 
 
 4.Uses descriptive activity names to name the activities in the merged data set.
 - convert activity column into factor and renaming the levels
 
 5.Extracts only the measurements on the mean and standard deviation for each measurement. 
-- use grep1 and regular expression to extract the column names with mean() and std() and subject_id and activity
+- use grep1 and regular expression to extract the column names with mean() and std() and subject and activity
 
 6.From the merged data set in step 5, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 - use melt function to create id variables: subject_id and activity and others to be measured variables
